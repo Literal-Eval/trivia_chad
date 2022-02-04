@@ -1,0 +1,14 @@
+.home {
+    min-width: 100%;
+    min-height: 100%;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ),url("../../assets/back_one.jpg");
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

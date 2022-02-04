@@ -1,0 +1,21 @@
+.pscreen {
+    width: 25vw;
+    min-width: 270px;
+    height: 80vh;
+    min-height: 550px;
+
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+        ),
+        url("../../assets/back_one.jpg");
+    background-size: cover;
+
+    margin: 50px;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
