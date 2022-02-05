@@ -9,7 +9,9 @@ const QuestionMeter = (props: any): JSX.Element => {
                 Question {props.questionNumber}{" "}
                 <span className="total-questions">/{props.totalQuestions}</span>
             </div>
-            <div className="question-progress-meter"></div>
+            <div className="question-progress-meter">
+                <div className="question-progress" style={{width: "20%"}}></div>
+            </div>
         </div>
     );
 };

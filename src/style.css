@@ -5,10 +5,23 @@
 }
 
 @font-face {
-    font-family: 'Sofia Pro Light';
-    src: url('assets/fonts/Sofiapro\ Light.otf');
+    font-family: 'Coco Gothic';
+    src: url('assets/fonts/Coco-Gothic-Light.ttf');
+    font-weight: 100 400;
+}
+
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('assets/fonts/Coco-Gothic-Regular.ttf');
+    font-weight: 400 500;
+}
+
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('assets/fonts/Coco-Gothic-Bold.ttf');
+    font-weight: 700 900;
 }
 
 body {
-    font-family: 'Sofia Pro Light', Times;
+    font-family: 'Coco Gothic', Times;
 }

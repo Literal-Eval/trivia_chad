@@ -1,0 +1,35 @@
+.option {
+    width: 90%;
+    background-color: #e8e7f5;
+    padding: 5px 4%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.option-text {
+    max-width: 80%;
+}
+
+.is-chosen-circle {
+    width: 24px;
+    height: 24px;
+
+    border: 3px solid #3767ba;
+    border-radius: 50%;
+
+    transition: background-color 0.2s ease-out;
+}
+
+.is-chosen-circle.on {
+    background-color: #3767ba;
+}
+
+.option:hover .is-chosen-circle {
+    background-color: #7395cf;
+}
