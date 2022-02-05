@@ -1,4 +1,4 @@
-.next-btn {
+.btn-huge {
     width: 160px;
     height: 50px;
 
@@ -18,11 +18,11 @@
     cursor: pointer;
 }
 
-.next-btn p {
+.btn-huge p {
     position: relative;
 }
 
-.next-btn::before {
+.btn-huge::before {
     content: "";
     display: inline;
 
@@ -39,6 +39,6 @@
     transition: background-color 0.2s ease-out;
 }
 
-.next-btn:hover::before {
+.btn-huge:hover::before {
     background-color: #f5994f;
 }

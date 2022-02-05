@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./NextButton.css";
+import "../HugeButton.css";
 
 const NextButton = (): JSX.Element => {
     return (
-        <button className="btn next-btn">
+        <button className="btn-huge next-btn">
             <p>Next</p>
         </button>
     );
