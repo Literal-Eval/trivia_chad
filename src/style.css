@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Sofia Pro Light';
+    src: url('assets/fonts/Sofiapro\ Light.otf');
+}
+
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Sofia Pro Light', Times;
 }
