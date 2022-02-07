@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4aef1c5.chunk.css",
+    "main.js": "/static/js/main.c1c10a5c.chunk.js",
+    "main.js.map": "/static/js/main.c1c10a5c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d935bac7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d935bac7.js.map",
+    "static/js/2.bd9dfd16.chunk.js": "/static/js/2.bd9dfd16.chunk.js",
+    "static/js/2.bd9dfd16.chunk.js.map": "/static/js/2.bd9dfd16.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d4aef1c5.chunk.css.map": "/static/css/main.d4aef1c5.chunk.css.map",
+    "static/js/2.bd9dfd16.chunk.js.LICENSE.txt": "/static/js/2.bd9dfd16.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/static/media/Lucy_Rounded.89f5c80f.otf",
+    "static/media/Home.css": "/static/media/back_five.9fe856c5.jpg",
+    "static/media/unicorn_sleep.8fabcae7.png": "/static/media/unicorn_sleep.8fabcae7.png",
+    "static/media/unicorn_woke.44279fb6.png": "/static/media/unicorn_woke.44279fb6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d935bac7.js",
+    "static/js/2.bd9dfd16.chunk.js",
+    "static/css/main.d4aef1c5.chunk.css",
+    "static/js/main.c1c10a5c.chunk.js"
+  ]
+}
