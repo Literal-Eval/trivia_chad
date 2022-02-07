@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 
 import PhoneScreen from "../../components/screen/PhoneScreen";
 import NextButton from "../../components/buttons/next-button/NextButton";
-import QuestionCard from "../../components/question-card/QuestionCard";
+import QuestionCard from "../question-card/QuestionCard";
 import QuestionMeter from "../../containers/question-meter/QuestionMeter";
 
 import QuestionContext from "../../context/question_context";

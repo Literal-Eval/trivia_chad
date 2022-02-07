@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
+import QuestionContext from "../../context/question_context";
 
 import "./QuestionMeter.css";
 
 const QuestionMeter = (props: any): JSX.Element => {
+    let ctx = useContext(QuestionContext);
+
+    let [questionNumber, setQuestionNumber] = useState(ctx.qNumber);
+    let [totalQuestions, setTotalQuestions] = useState(ctx.questions.length);
+
+    useEffect(() => {
+        setQuestionNumber(ctx.qNumber);
+        setTotalQuestions(ctx.questions.length);
+    }, [ctx.qNumber, ctx.questions.length]);
+
     return (
         <div className="question-meter">
             <div className="question-count">
-                Question {props.questionNumber}{" "}
-                <span className="total-questions">/{props.totalQuestions}</span>
+                Question {questionNumber + 1}
+                <span className="total-questions">/{totalQuestions}</span>
             </div>
             <div className="question-progress-meter">
-                <div className="question-progress" style={{width: "20%"}}></div>
+                <div
+                    className="question-progress"
+                    style={{ width: "20%" }}
+                ></div>
             </div>
         </div>
     );

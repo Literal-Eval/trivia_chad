@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./Question.css";
+import "./QuestionTitle.css";
 
-const Question = (props: any): JSX.Element => {
+const QuestionTitle = (props: any): JSX.Element => {
     return (
         <p className="question">
             <span>{props.children}</span>
@@ -10,4 +10,4 @@ const Question = (props: any): JSX.Element => {
     );
 };
 
-export default Question;
+export default QuestionTitle;

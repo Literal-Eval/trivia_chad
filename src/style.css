@@ -5,23 +5,11 @@
 }
 
 @font-face {
-    font-family: 'Coco Gothic';
-    src: url('assets/fonts/Coco-Gothic-Light.ttf');
-    font-weight: 100 400;
-}
-
-@font-face {
-    font-family: 'Coco Gothic';
-    src: url('assets/fonts/Coco-Gothic-Regular.ttf');
+    font-family: "Lucy Rounded";
+    src: url("assets/fonts/Lucy_Rounded.otf");
     font-weight: 400 500;
 }
 
-@font-face {
-    font-family: 'Coco Gothic';
-    src: url('assets/fonts/Coco-Gothic-Bold.ttf');
-    font-weight: 700 900;
-}
-
 body {
-    font-family: 'Coco Gothic', Times;
+    font-family: "Lucy Rounded", Times;
 }

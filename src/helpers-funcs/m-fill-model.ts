@@ -1,14 +1,5 @@
-import { Question } from "../models/questions";
+import { Question, QuestionInterface } from "../models/questions";
 import mFetch from "./m-fetch";
-
-interface QuestionInterface {
-    category: string,
-    type: string,
-    difficulty: string,
-    question: string,
-    correct_answer: string,
-    incorrect_answers: string,
-}
 
 interface FetchResult {
     results: QuestionInterface[],
@@ -17,7 +8,12 @@ interface FetchResult {
 
 async function fillModel(questions: Question[]) {
     let data = (await mFetch() as FetchResult)['results'];
-    console.log(data);
+ 
+    data.forEach((element: QuestionInterface) => {
+        questions.push(new Question(element));
+    });
+
+    console.log(questions);
 }
 
 export default fillModel;
