@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import QuestionContext from "../../../context/question_context";
 import fillModel from "../../../helpers-funcs/m-fill-model";
 
@@ -8,9 +8,9 @@ const LesGoButton = (): JSX.Element => {
     var ctx = useContext(QuestionContext);
 
     async function handleClick() {
-        ctx.qStatus = "fetching";
+        ctx.setQStatus("fetching");
         await fillModel(ctx.questions);
-        ctx.qStatus = "fetched";
+        ctx.setQStatus("fetched");
     }
 
     return (
