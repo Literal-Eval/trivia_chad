@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import QuestionContext from "../../../context/question_context";
-import fillModel from "../../../helpers-funcs/m-fill-model";
+import fillModel from "../../../helper-funcs/m-fill-model";
 
 import "../HugeButton.css";
 
