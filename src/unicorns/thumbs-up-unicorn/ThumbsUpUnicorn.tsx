@@ -14,7 +14,7 @@ const ThumbsUpUnicorn = (): JSX.Element => {
             y="0"
             viewBox="0 0 506.393 506.393"
             xmlSpace="preserve"
-            className="thumbs-up-unicorn"
+            className="unicorn"
         >
             <g>
                 <g xmlns="http://www.w3.org/2000/svg">

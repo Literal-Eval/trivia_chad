@@ -7,11 +7,11 @@ import QuestionMeter from "../../containers/question-meter/QuestionMeter";
 
 import QuestionContext from "../../context/question_context";
 
-import SleepingUnicorn from "../../assets/icons/unicorn_sleep.png";
-import WokeUnicorn from "../../assets/icons/unicorn_woke.png";
+import ThumbsUpUnicorn from "../../unicorns/thumbs-up-unicorn/ThumbsUpUnicorn";
+import SleepingUnicorn from "../../unicorns/sleeping-unicorn/SleepingUnicorn";
 
 import "./Phone.css";
-import ThumbsUpUnicorn from "../../unicorns/thumbs-up-unicorn/ThumbsUpUnicorn";
+import LoadingUnicorn from "../../unicorns/loading-unicorn/LoadingUnicorn";
 
 const Phone = (props: any): JSX.Element => {
     const ctx = useContext(QuestionContext);
@@ -41,13 +41,10 @@ const Phone = (props: any): JSX.Element => {
                     <QuestionCard></QuestionCard>
                     <HugeButton onClick={handleNext}>Next</HugeButton>
                 </React.Fragment>
+            ) : cStatus === "idle" ? (
+                <SleepingUnicorn></SleepingUnicorn>
             ) : (
-                <img
-                    src={cStatus === "idle" ? SleepingUnicorn : WokeUnicorn}
-                    alt="Sleeping Unicorn"
-                    width={"150px"}
-                    height={"150px"}
-                ></img>
+                <LoadingUnicorn></LoadingUnicorn>
             )}
         </PhoneScreen>
     );
