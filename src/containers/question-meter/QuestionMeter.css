@@ -31,4 +31,6 @@
 
     background: linear-gradient(to right, #bb3a7d, #e070aae0);
     border-radius: 20px;
+
+    transition: width 0.16s ease-out, background 0.16s ease-out;
 }

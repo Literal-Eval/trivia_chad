@@ -21,12 +21,18 @@ const Phone = (props: any): JSX.Element => {
     }, [ctx.qStatus]);
 
     const handleNext = () => {
-        ctx.setQNumber(ctx.qNumber + 1);
-    }
+        if (ctx.qNumber + 1 === ctx.questions.length) {
+            ctx.setQStatus("done");
+        } else {
+            ctx.setQNumber(ctx.qNumber + 1);
+        }
+    };
 
     return (
         <PhoneScreen>
-            {cStatus === "fetched" ? (
+            {cStatus === "done" ? (
+                <React.Fragment></React.Fragment>
+            ) : cStatus === "fetched" ? (
                 <React.Fragment>
                     <QuestionMeter></QuestionMeter>
                     <QuestionCard></QuestionCard>

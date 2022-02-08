@@ -23,7 +23,7 @@ const QuestionMeter = (props: any): JSX.Element => {
             <div className="question-progress-meter">
                 <div
                     className="question-progress"
-                    style={{ width: "20%" }}
+                    style={{ width: `${(questionNumber + 1) * 100 / totalQuestions}%` }}
                 ></div>
             </div>
         </div>
