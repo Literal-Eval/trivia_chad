@@ -16,12 +16,15 @@ const QuestionCard = (props: any): JSX.Element => {
     let parser = new DOMParser();
 
     useEffect(() => {
-        setQuestion(ctx.questions[ctx.qNumber]);
-        setChosenData((oldState: boolean[]): boolean[] => {
-            oldState = [false, false, false, false];
-            return oldState;
-        });
-    }, [ctx.qNumber, ctx.questions]);
+        if (ctx.questions.length !== 0) {
+            setQuestion(ctx.questions[ctx.qNumber]);
+
+            setChosenData((oldState: boolean[]): boolean[] => {
+                oldState = [false, false, false, false];
+                return oldState;
+            });
+        }
+    }, [ctx.qNumber, ctx.questions, question]);
 
     const handleClick = (index: number): void => {
         setChosenData((oldState: boolean[]): boolean[] => {
@@ -44,7 +47,7 @@ const QuestionCard = (props: any): JSX.Element => {
             <div className="question-card">
                 <QuestionTitle>
                     {
-                        parser.parseFromString(question.title, "text/html").body
+                        parser.parseFromString(question?.title, "text/html").body
                             .textContent
                     }
                 </QuestionTitle>
@@ -52,25 +55,25 @@ const QuestionCard = (props: any): JSX.Element => {
                     onClick={() => handleClick(0)}
                     isChosen={chosenData[0]}
                 >
-                    {question.options[0]}
+                    {question?.options[0]}
                 </QOption>
                 <QOption
                     onClick={() => handleClick(1)}
                     isChosen={chosenData[1]}
                 >
-                    {question.options[1]}
+                    {question?.options[1]}
                 </QOption>
                 <QOption
                     onClick={() => handleClick(2)}
                     isChosen={chosenData[2]}
                 >
-                    {question.options[2]}
+                    {question?.options[2]}
                 </QOption>
                 <QOption
                     onClick={() => handleClick(3)}
                     isChosen={chosenData[3]}
                 >
-                    {question.options[3]}
+                    {question?.options[3]}
                 </QOption>
             </div>
         </Card>

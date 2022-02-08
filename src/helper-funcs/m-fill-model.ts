@@ -8,12 +8,11 @@ interface FetchResult {
 
 async function fillModel(questions: Question[]) {
     let data = (await mFetch() as FetchResult)['results'];
- 
+    questions.splice(0);
+    
     data.forEach((element: QuestionInterface) => {
         questions.push(new Question(element));
     });
-
-    console.log(questions);
 }
 
 export default fillModel;
