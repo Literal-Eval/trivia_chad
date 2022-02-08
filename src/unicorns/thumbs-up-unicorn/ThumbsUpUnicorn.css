@@ -1,0 +1,28 @@
+.thumbs-up-unicorn {
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.star {
+    animation-name: twinkle;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.star--one {
+    animation-duration: 600ms;
+}
+
+.star--two {
+    animation-duration: 1s;
+}

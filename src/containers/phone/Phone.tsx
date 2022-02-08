@@ -11,6 +11,7 @@ import SleepingUnicorn from "../../assets/icons/unicorn_sleep.png";
 import WokeUnicorn from "../../assets/icons/unicorn_woke.png";
 
 import "./Phone.css";
+import ThumbsUpUnicorn from "../../unicorns/thumbs-up-unicorn/ThumbsUpUnicorn";
 
 const Phone = (props: any): JSX.Element => {
     const ctx = useContext(QuestionContext);
@@ -31,7 +32,9 @@ const Phone = (props: any): JSX.Element => {
     return (
         <PhoneScreen>
             {cStatus === "done" ? (
-                <React.Fragment></React.Fragment>
+                <React.Fragment>
+                    <ThumbsUpUnicorn></ThumbsUpUnicorn>
+                </React.Fragment>
             ) : cStatus === "fetched" ? (
                 <React.Fragment>
                     <QuestionMeter></QuestionMeter>
