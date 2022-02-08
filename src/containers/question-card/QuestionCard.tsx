@@ -17,6 +17,10 @@ const QuestionCard = (props: any): JSX.Element => {
 
     useEffect(() => {
         setQuestion(ctx.questions[ctx.qNumber]);
+        setChosenData((oldState: boolean[]): boolean[] => {
+            oldState = [false, false, false, false];
+            return oldState;
+        });
     }, [ctx.qNumber, ctx.questions]);
 
     const handleClick = (index: number): void => {

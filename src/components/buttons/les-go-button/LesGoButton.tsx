@@ -14,7 +14,7 @@ const LesGoButton = (): JSX.Element => {
     }
 
     return (
-        <button onClick={handleClick} className="btn-huge next-btn">
+        <button onClick={handleClick} className="btn-huge">
             <p>Lesss Go</p>
         </button>
     );

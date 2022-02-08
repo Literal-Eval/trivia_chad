@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 
 import PhoneScreen from "../../components/screen/PhoneScreen";
-import NextButton from "../../components/buttons/next-button/NextButton";
+import HugeButton from "../../components/buttons/huge-button/HugeButton";
 import QuestionCard from "../question-card/QuestionCard";
 import QuestionMeter from "../../containers/question-meter/QuestionMeter";
 
@@ -20,13 +20,17 @@ const Phone = (props: any): JSX.Element => {
         setCStatus(ctx.qStatus);
     }, [ctx.qStatus]);
 
+    const handleNext = () => {
+        ctx.setQNumber(ctx.qNumber + 1);
+    }
+
     return (
         <PhoneScreen>
             {cStatus === "fetched" ? (
                 <React.Fragment>
                     <QuestionMeter></QuestionMeter>
                     <QuestionCard></QuestionCard>
-                    <NextButton></NextButton>
+                    <HugeButton onClick={handleNext}>Next</HugeButton>
                 </React.Fragment>
             ) : (
                 <img
