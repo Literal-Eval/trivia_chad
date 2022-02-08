@@ -26,7 +26,8 @@
     transition: background-color 0.2s ease-out;
 }
 
-.is-chosen-circle.on {
+.option.on .is-chosen-circle,
+.option.on:hover .is-chosen-circle {
     background-color: #3767ba;
 }
 
