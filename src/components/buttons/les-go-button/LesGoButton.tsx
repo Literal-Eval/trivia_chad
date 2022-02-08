@@ -9,6 +9,7 @@ const LesGoButton = (): JSX.Element => {
 
     async function handleClick() {
         ctx.setQStatus("fetching");
+        ctx.setQuestions([]);
         await fillModel(ctx.questions);
         ctx.setQStatus("fetched");
     }
