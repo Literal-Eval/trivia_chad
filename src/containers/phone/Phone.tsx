@@ -22,10 +22,16 @@ const Phone = (props: any): JSX.Element => {
     }, [ctx.qStatus]);
 
     const handleNext = () => {
+        if (ctx.questions[ctx.qNumber].correctOptionNo === ctx.chosenOption) {
+            ctx.setScore(ctx.score + 1);
+        }
+
         if (ctx.qNumber + 1 === ctx.questions.length) {
             ctx.setQStatus("done");
+            console.log(ctx.score);
         } else {
             ctx.setQNumber(ctx.qNumber + 1);
+            ctx.setChosenOption(-1);
         }
     };
 

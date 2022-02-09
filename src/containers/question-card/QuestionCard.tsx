@@ -40,6 +40,8 @@ const QuestionCard = (props: any): JSX.Element => {
 
             return oldState;
         });
+
+        ctx.setChosenOption(index);
     };
 
     return (
