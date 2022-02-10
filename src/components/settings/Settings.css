@@ -1,0 +1,9 @@
+.settings {
+    width: 26.4vmax;
+    height: 26.4vmax;
+
+    display: grid;
+    grid-template-columns: 12vmax 12vmax;
+    grid-template-rows: 12vmax 12vmax;
+    gap: 2.4vmax;
+}

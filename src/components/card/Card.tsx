@@ -6,7 +6,12 @@ const Card = (props: any): JSX.Element => {
     return (
         <div
             className="card"
-            style={{ width: props.width, height: props.height }}
+            style={{
+                width: props.width,
+                height: props.height,
+                margin: props.margin,
+                padding: props.padding,
+            }}
         >
             {props.children}
         </div>

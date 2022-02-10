@@ -1,7 +1,7 @@
 import React from "react";
 
 import Phone from "../../containers/phone/Phone";
-import LesGoButton from "../buttons/les-go-button/LesGoButton";
+import Config from "../config/Config";
 import Header from "../header/Header";
 
 import "./Home.css";
@@ -10,7 +10,7 @@ const Home = (): JSX.Element => {
     return (
         <div className="home">
             <Header></Header>
-            <LesGoButton></LesGoButton>
+            <Config></Config>
             <Phone></Phone>
         </div>
     );

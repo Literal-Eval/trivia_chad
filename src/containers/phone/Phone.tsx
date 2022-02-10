@@ -7,11 +7,11 @@ import QuestionMeter from "../../containers/question-meter/QuestionMeter";
 
 import QuestionContext from "../../context/question_context";
 
-import ThumbsUpUnicorn from "../../unicorns/thumbs-up-unicorn/ThumbsUpUnicorn";
-import SleepingUnicorn from "../../unicorns/sleeping-unicorn/SleepingUnicorn";
+import ThumbsUpUnicorn from "../../svgs/unicorns/thumbs-up-unicorn/ThumbsUpUnicorn";
+import SleepingUnicorn from "../../svgs/unicorns/sleeping-unicorn/SleepingUnicorn";
 
 import "./Phone.css";
-import LoadingUnicorn from "../../unicorns/loading-unicorn/LoadingUnicorn";
+import LoadingUnicorn from "../../svgs/unicorns/loading-unicorn/LoadingUnicorn";
 
 const Phone = (props: any): JSX.Element => {
     const ctx = useContext(QuestionContext);
